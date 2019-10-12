@@ -1,8 +1,9 @@
-package educ.dexequiel.patterns;
+package educ.dexequiel.patterns.singleton;
 
 public class Singleton {
 
     private static Singleton _instance;
+    private long id = (long) (Math.random() * 1000);
 
     private Singleton() {
 
@@ -21,5 +22,9 @@ public class Singleton {
 
     public void terminate() {
         System.out.println("Singleton terminated.");
+    }
+
+    public long getId() {
+        return this.id;
     }
 }
