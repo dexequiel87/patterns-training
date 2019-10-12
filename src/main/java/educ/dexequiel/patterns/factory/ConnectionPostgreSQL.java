@@ -1,11 +1,12 @@
 package educ.dexequiel.patterns.factory;
 
-public class ConectionPostgreSQL implements IConection {
-    public void connect() {
+public class ConnectionPostgreSQL implements IConection {
 
+    public void connect() {
+        System.out.println("PostgreSQL connected");
     }
 
     public void disconnect() {
-
+        System.out.println("PostgreSQL disconnected");
     }
 }

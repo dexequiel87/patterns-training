@@ -1,6 +1,6 @@
 package educ.dexequiel.patterns.factory;
 
-public class ConectionMySQL implements IConection {
+public class ConnectionMySQL implements IConection {
 
     public void connect() {
         System.out.println("MySQL connected");
