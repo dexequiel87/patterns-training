@@ -8,7 +8,7 @@ public class TestPrototype {
     @Test
     public void testPrototype() {
         IBankAccount original = new SavingsAccountImpl(200d);
-        IBankAccount clone = (SavingsAccountImpl) original._clone();
+        IBankAccount clone = (SavingsAccountImpl) original.clone();
 
         assertEquals(original.getAmount(), clone.getAmount());
         assertFalse(original == clone);
